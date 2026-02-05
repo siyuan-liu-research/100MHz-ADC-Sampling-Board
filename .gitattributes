@@ -1,0 +1,1 @@
+firmware/fpga_firmware_vivado_project_v1.0.zip filter=lfs diff=lfs merge=lfs -text

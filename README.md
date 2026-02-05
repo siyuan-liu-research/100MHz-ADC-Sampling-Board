@@ -2,15 +2,15 @@
 
 100MHz High-Speed ADC Sampling Board (Including 3.3V-1.8V Voltage Conversion Board) | Hardware Design + FPGA Firmware Development + Open-Source Performance Test Script | 2025 Undergraduate Innovation Practice Training Program Project, National Astronomical Observatories, Chinese Academy of Sciences
 
-## 📋 Project Overview
+## Project Overview
 
 This project is a **100MSps, 8-bit, dual-channel** high-speed ADC sampling system, consisting of a core ADC sampling board and a supporting 3.3V-1.8V voltage conversion board. It is designed specifically for high-speed analog signal digital acquisition and is ultimately connected to the AXKU041 FPGA development board for signal acquisition and processing.
 
 The system completes the conversion and level adaptation from analog to digital signals through a standard signal link. The hardware design is completed based on JLC EDA, and the FPGA firmware is developed based on Vivado 2024.2. All hardware design files (schematic diagrams, PCBs, BOMs), FPGA firmware code, and performance test scripts are fully open-sourced for academic research and non-commercial educational purposes only.
 
-## 📸 Physical Display
+## Physical Display
 
-## 🎯 Project Background
+## Project Background
 
 This project is an approved project of the **2025 Undergraduate Innovation Practice Training Program of the National Astronomical Observatories, Chinese Academy of Sciences**, and is developed relying on the Pulsar and Gravitational Physics Research Group - BAO of the National Astronomical Observatories.
 
@@ -18,7 +18,7 @@ This project is an approved project of the **2025 Undergraduate Innovation Pract
 
 The project R&D funding is jointly provided by **Shenzhen JLC Technology Group Co., Ltd.** and the **Pulsar and Gravitational Physics Research Group (BAO) of the National Astronomical Observatories, Chinese Academy of Sciences**.
 
-## 🛠️ Hardware Design
+## Hardware Design
 
 All hardware design files are stored in the `hardware/` directory, which is divided into two subdirectories to manage the design files of the ADC sampling board and the voltage conversion board. All are drawn with **JLC EDA**, including complete schematic diagrams, PCB layouts, and Bill of Materials (BOM):
 
@@ -48,11 +48,11 @@ Realizes **3.3V→1.8V** digital signal level conversion to complete the level m
 
 ADC Sampling Board ↔ Voltage Conversion Board (FMC interface) ↔ AXKU041 FPGA Development Board (FMC interface), forming a complete high-speed signal acquisition link.
 
-## 💻 Firmware Development
+## Firmware Development
 
 Firmware code and programming files are stored in the `firmware/` directory, which is the FPGA acquisition firmware adapted for AXKU041. It is developed entirely based on **Xilinx Vivado 2024.2**, including Vivado project source code, project configuration files, and directly programmable bitstream files.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Hardware Connection
 
@@ -81,7 +81,7 @@ python script_file_name.py sampling_data.csv
 ```
 3. After the script runs, it will automatically complete data parsing, **draw and pop up the time-domain waveform diagram and normalized frequency-domain spectrogram of each channel in real time**, and generate a PNG format visualization result file with the same name in the `test/` directory (CSV file name + .png). The integrity of the sampled signal can be intuitively analyzed through the waveform/spectrum to complete the circuit board performance verification.
 
-## 📁 Repository Directory Structure
+## Repository Directory Structure
 
 ```
 100MHz High-Speed ADC Sampling Board/
@@ -95,12 +95,12 @@ python script_file_name.py sampling_data.csv
 └── README.md        # Project description document (this document)
 ```
 
-## 📧 Contact Information
+## Contact Information
 
 If you have any questions, suggestions or want to communicate in depth about the project, please contact me via email:
 siyuan.liu.research@outlook.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 1. 2025 Undergraduate Innovation Practice Training Program, National Astronomical Observatories, Chinese Academy of Sciences
 2. Pulsar and Gravitational Physics Research Group - BAO, National Astronomical Observatories, Chinese Academy of Sciences

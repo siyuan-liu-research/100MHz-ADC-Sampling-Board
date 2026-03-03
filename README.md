@@ -11,6 +11,8 @@ This project is a **100MSps, 8-bit, dual-channel** high-speed ADC sampling syste
 The system completes the conversion and level adaptation from analog to digital signals through a standard signal link. The hardware design is completed based on JLC EDA, and the FPGA firmware is developed based on Vivado 2024.2. All hardware design files (schematic diagrams, PCBs, BOMs), FPGA firmware code, and performance test scripts are fully open-sourced for academic research and non-commercial educational purposes only.
 
 ## Physical Display
+![hardware_physical_adc_board_v1](https://github.com/user-attachments/assets/a6a6d404-6b1b-4105-83c5-7c357f7fd876)
+
 
 ## Project Background
 

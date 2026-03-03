@@ -2,6 +2,8 @@
 
 100MHz High-Speed ADC Sampling Board (Including 3.3V-1.8V Voltage Conversion Board) | Hardware Design + FPGA Firmware Development + Open-Source Performance Test Script | 2025 Undergraduate Innovation Practice Training Program Project, National Astronomical Observatories, Chinese Academy of Sciences
 
+YouTube Link: https://youtu.be/Xv37qcrs5-E
+
 ## Project Overview
 
 This project is a **100MSps, 8-bit, dual-channel** high-speed ADC sampling system, consisting of a core ADC sampling board and a supporting 3.3V-1.8V voltage conversion board. It is designed specifically for high-speed analog signal digital acquisition and is ultimately connected to the AXKU041 FPGA development board for signal acquisition and processing.

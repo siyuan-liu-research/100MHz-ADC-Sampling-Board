@@ -94,7 +94,31 @@ python script_file_name.py sampling_data.csv
 │   ├── ADC_Sampling_Board/  # ADC sampling board: schematic diagrams, PCBs, BOMs
 │   └── Voltage_Conversion_Board/ # Voltage conversion board: schematic diagrams, PCBs, BOMs
 ├── firmware/        # FPGA firmware: source code, Vivado project files, programmable bitstream files
-├── test/            # Performance testing: Python analysis scripts
+├── test/            # Performance testing suite: core analysis script + categorized test data & generated plots
+│   ├── 1_Single-Frequency_Test/   # Single-tone test (40MHz @ -3dBm) for Channel A/B
+│   │   # Actual contents: Raw CSV data + time/freq domain analysis PNGs for ChA/ChB 40MHz -3dBm input
+│   │   ├── iladata_-3dbm_A_40M.csv
+│   │   ├── iladata_-3dbm_A_40M_analysis.png
+│   │   ├── iladata_-3dbm_B_40M.csv
+│   │   └── iladata_-3dbm_B_40M_analysis.png
+│   ├── 2_dB_Test/                 # Power level comparison test (40MHz @ -3dBm / -6dBm) for Channel A
+│   │   # Actual contents: Raw CSV data + analysis PNGs for 40MHz -3dBm/-6dBm input on ChA
+│   │   ├── iladata_-3dbm_A_40M.csv
+│   │   ├── iladata_-3dbm_A_40M_analysis.png
+│   │   ├── iladata_-6dbm_A_40M.csv
+│   │   └── iladata_-6dbm_A_40M_analysis.png
+│   ├── 3_Intermodulation_Test/    #  NO TEST DATA YET
+│   ├── 4_Frequency_Amplitude_Response/ # Frequency sweep test (10/20/30/40MHz @ -3dBm) for Channel A
+│   │   # Actual contents: Raw CSV data + analysis PNGs for 10/20/30/40MHz -3dBm input on ChA
+│   │   ├── iladata_-3dbm_A_10M.csv
+│   │   ├── iladata_-3dbm_A_10M_analysis.png
+│   │   ├── iladata_-3dbm_A_20M.csv
+│   │   ├── iladata_-3dbm_A_20M_analysis.png
+│   │   ├── iladata_-3dbm_A_30M.csv
+│   │   ├── iladata_-3dbm_A_30M_analysis.png
+│   │   ├── iladata_-3dbm_A_40M.csv
+│   │   └── iladata_-3dbm_A_40M_analysis.png
+│   └── 100M_test_plot_ila.py      # Core analysis script: Parses CSV raw data → generates time/freq domain plots (PNG)
 ├── LICENSE          # Open-source license (MIT + academic use restrictions)
 └── README.md        # Project description document (this document)
 ```
